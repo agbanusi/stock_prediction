@@ -1,0 +1,9 @@
+numpy
+pandas
+jhTAlib
+statistics
+scikit-learn
+gunicorn
+flask
+ta
+MetaTrader5
