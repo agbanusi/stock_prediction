@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+ <head>
+  <title> Choose your Indicator </title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script type="text/javascript">
+
+   function checkboxlimit(checkgroup, limit){
+	var checkgroup=checkgroup
+	var limit=limit
+	for (var i=0; i<checkgroup.length; i++){
+		checkgroup[i].onclick=function(){
+		var checkedcount=0
+		for (var i=0; i<checkgroup.length; i++)
+			checkedcount+=(checkgroup[i].checked)? 1 : 0
+		if (checkedcount>limit){
+			alert("You can only select a maximum of "+limit+" checkboxes")
+			this.checked=false
+			}
+		}
+	}
+   }
+
+   </script>
+ </head>
+ <body>
+  <h1 style="{color:'red'}">
+    Please note that the robot is not perfect so I advise constant monitoring of trades also
+   </h1>
+  <form  method='POST' name ='input' class='form1'>
+    <div>
+      <legend>
+        Input your login ID and password carefully
+      </legend>
+      <input type='text' name='input' placeholder='login ID'><br>
+      <input type='password' placeholder='password'>
+    </div>
+    <br>
+    <div>
+      <h4 style='{color:"red"}'>
+        Please note that this site uses Metatrader 5 only for uniformity purposes
+      </h4>
+      <legend>
+        Input the traders server you are using, options like "ForexTimeFXTM-Demo01" or "ForexTimeFXTM-Live01"
+      </legend>
+      <input type='text' name='input' placeholder='ForexTimeFXTM-Demo02'>
+    </div>
+    <br>
+    <h2> The Indicators to be used for Forex Price Prediction </h2>
+    <div>
+      <legend> The momentum indicators you want to use is: </legend>
+      <input type='checkbox' name ='input' value= 'Stochastic Gradient'> Stochastic Gradient <br>
+      <input type='checkbox' name ='input' value= 'Parabolic SAR'> Parabolic SAR <br>
+      <input type='checkbox' name ='input' value= 'MACD'> MACD <br>
+      <input type='checkbox' name ='input' value= 'SMVA'> SMVA <br>
+      <input type='checkbox' name ='input' value= 'momentum'> Momentum <br>
+      <input type='checkbox' name ='input' value= 'Williams %R'> Williams %R <br>
+    </div>
+    <br>
+    <div>
+      <legend> The trend indicators you want to use is: </legend>
+      <input type='checkbox' name ='input' value= 'RSI'> RSI <br>
+      <input type='checkbox' name ='input' value= 'Bollinger Bands'> Bollinger Bands <br>
+      <input type='checkbox' name ='input' value= 'Chaikin A/D oscillator'> Chaikin A/D oscillator <br>
+    </div>
+    <br>
+    <div>
+     <legend> The volume indicators you want to use is: </legend>
+     <input type='checkbox' name ='input' value= 'Money Flow Index'> Money Flow Index <br>
+     <input type='checkbox' name ='input' value= 'On Balance Volume'> On Balance Volume <br>
+     <script type="text/javascript">
+  	   checkboxlimit(document.forms.input.input, 6)
+      </script>
+    </div>
+    <br>
+    <div>
+     <legend> <div> This fourth indicator could be any of them but only contributes 10% of the confidence level. It can also be used to strengthen an Indicator already used. </div></legend>
+     <select name='input'>   
+      <option value= 'Stochastic Gradient'> Stochastic Gradient </option>
+      <option  value= 'Parabolic SAR'> Parabolic SAR </option>
+      <option  value= 'MACD'> MACD </option>
+      <option  value= 'SMVA'> SMVA </option>
+      <option  value= 'RSI'> RSI </option>
+      <option  value= 'Bollinger Bands'> Bollinger Bands </option>
+      <option  value= 'Money Flow Index'> Money Flow Index </option>
+      <option  value= 'On Balance Volume'> On Balance Volume </option>
+      <option  value= 'Stochastic_RSI'> Stochastic RSI </option>
+      <option  value= 'momentum'> Momentum </option>
+      <option  value= 'Williams %R'> Williams %R </option>
+     </select>
+    </div>
+    <div>
+      <legend>
+        If you want to receive live updates of your robot trade enter your no
+      </legend>
+      <input type='tel' name='input' placeholder='8012345678'>
+    </div>
+    <input type="submit" class="btn btn-primary" name="input">
+  </form>
+  <br>
+   <div id='results'>
+    
+   </div>
+ </body>
+</html>
+
+  
+
+
