@@ -9,7 +9,7 @@ import MetaTrader5 as ft
 import pickle
 import pandas as pd
 from twilio.rest import Client
-client = Client(process.env.KEY,process.env.SECRET)
+client = Client(secrets.KEYS,secrets.TOKEN)
 
 from_whatsapp='whatsapp:+14155238886'
 
