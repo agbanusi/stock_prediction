@@ -5,6 +5,5 @@ statistics
 scikit-learn
 gunicorn
 flask
-python-socketio
 ta
 MetaTrader5
