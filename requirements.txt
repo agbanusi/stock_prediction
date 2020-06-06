@@ -1,10 +1,1 @@
-numpy
-pandas
-jhTAlib
-statistics
-scikit-learn
-gunicorn
-flask
-python-socketio
-ta
-MetaTrader5
+
