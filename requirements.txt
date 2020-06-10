@@ -5,5 +5,7 @@ statistics
 scikit-learn
 gunicorn
 flask
-ta
+ta==0.4.6
 MetaTrader5
+matplotlib
+twilio
