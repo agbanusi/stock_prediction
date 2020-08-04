@@ -1,2 +1,2 @@
-# autoML
-It automatic uses all popular models of ML to predict a dataset.
+# Stock Prediction App
+It builds on an algorithm, detect changes and predict market movement then make trades for you on your behalf.
