@@ -1,4 +1,4 @@
-# Forex Prediction App
+# Forex Auto Trading and Prediction App
 It is built to choose from a range of algorithm, to detect changes and predict market movements and make trades for you on your behalf on forex time or meta trader.
 
 ### List of Trend Algorithm available are:
@@ -35,3 +35,5 @@ Then run ``` python3 app.py ```
 Keys and secrets do not work so you have to replace them
 
 Built on ta and Flask
+
+You can fork and build on it especially on the UI
