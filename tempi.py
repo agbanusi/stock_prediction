@@ -13,8 +13,6 @@ instru=["EURUSD","EURGBP","EURAUD","EURNZD","EURJPY","EURCHF","EURCAD",
    "AUDNZD","AUDCHF","AUDCAD","CADCHF"]
 #instru=["EURUSD","EURGBP","USDCAD","USDJPY","EURAUD","GBPAUD","EURNZD","GBPCHF","EURJPY","GBPUSD","AUDUSD","NZDUSD","EURCHF","EURCAD"]
 v = ['Stochastic Gradient','MACD','RSI','Bollinger Bands','Money Flow Index','Parabolic SAR','Chaikin A/D oscillator']
-#ft.initialize(server='ForexTimeFXTM-Demo02',login=67048338,password='Kenechuku217')
-#v = ['Parabolic SAR','Stochastic Gradient','RSI','Bollinger Bands','Money Flow Index','On Balance Volume','Williams %R']
 timer = time.localtime()[3]
 while True:
   if timer>= 8 and timer<=18:
